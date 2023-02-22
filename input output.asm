@@ -52,6 +52,10 @@ MAIN PROC
      MOV AH,2
      MOV DL,in4
      INT 21H
+     ;String input
+     LEA DX, MSG
+     MOV AH, 9
+     INT 21h
 
     MOV AH,4CH
     INT 21H
